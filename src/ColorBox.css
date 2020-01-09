@@ -62,3 +62,24 @@
 .clearfix {
     opacity: 0;
 }
+
+.grow-box {
+    margin: 0 auto;
+    height: 0;
+    width: 0;
+    position: absolute;
+    /* display: inline-block; */
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);;
+}
+
+.growing {
+    height: 30%;
+    width: 30%;
+    transform: scale(300);
+    z-index: 100;
+    transition: all 2s;
+}
