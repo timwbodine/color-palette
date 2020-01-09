@@ -12,7 +12,7 @@ class ColorBox extends Component {
 
     copyColor() {
         this.setState({copied: true}, () => {
-            setTimeout(() => this.setState({copied: false}), 500);
+            setTimeout(() => this.setState({copied: false}), 800);
         });
     }
     render() {
@@ -21,6 +21,10 @@ class ColorBox extends Component {
             <div style={{background: background}} className="ColorBox" >
                 <div className="clearfix">.</div>
                 <div style={{background: background}} className={`grow-box ${this.state.copied ? 'growing' : ''}`}></div> 
+                <div className={`copy-msg ${this.state.copied ? 'shown' : ''}`}>
+                    <h1>Copied</h1>
+                    <p>{this.props.background}</p>
+                </div>
                     <div className="copy-container">
                         <div className="box-content">
                             <span>{name}</span>
