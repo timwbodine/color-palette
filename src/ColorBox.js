@@ -18,7 +18,7 @@ class ColorBox extends Component {
     render() {
     const {background, name} = this.props;
         return (
-            <div style={{background: background}} className="ColorBox" >
+            <div style={{background: background}} className="ColorBox">
                 <div className="clearfix">.</div>
                 <div style={{background: background}} className={`grow-box ${this.state.copied ? 'growing' : ''}`}></div> 
                 <div className={`copy-msg ${this.state.copied ? 'shown' : ''}`}>
