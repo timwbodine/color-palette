@@ -47,13 +47,13 @@ function MiniPalette(props) {
     const { classes, paletteName, id, emoji, colors } = props;
 
     return (
-        <div className={classes.root}>
+        <div className={classes.root} onClick={props.goToPalette}>
             <div className={classes.colors}>
                 {colors.map((col) => (
                     <div className={classes.colorbox} style={{backgroundColor: col.color}}><div className={classes.clearfix}>.</div></div>
                 ))}
             </div>
-            <h5 className={classes.title}><Link to={`/palette/${id}`}>(link)</Link>{paletteName}<span className={classes.emoji}>{emoji}</span></h5>
+            <h5 className={classes.title}>{paletteName}<span className={classes.emoji}>{emoji}</span></h5>
 
         </div>
     );
