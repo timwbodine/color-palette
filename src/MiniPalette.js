@@ -16,7 +16,8 @@ const styles= {
     },
     colors: {
         backgroundColor: "grey",
-        width: "100%"
+        width: "100%",
+        height: "7rem"
     },
     title: {
         display: "flex",

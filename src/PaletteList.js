@@ -8,16 +8,11 @@ const styles = {
         backgroundColor: "blue",
         height: "100vh",
         display: "flex",
-        alignItems: "flex-start",
         justifyContent: "center"
     },
     container: {
-        width: "50%",
+        width: "70%",
         height: "100%",
-        display: "flex",
-        alignItems: "flex-start",
-        flexDirection: "column",
-        flexWrap: "wrap"    
     },
     nav: {
 
@@ -29,7 +24,7 @@ const styles = {
         boxSizing: "border-box",
         width: "100%",
         display: "grid",
-        gridTemplateColumns: "repeat(3, 30%)",
+        gridTemplateColumns: "repeat(3, 33%)",
         gridGap: "0"
                 
 
