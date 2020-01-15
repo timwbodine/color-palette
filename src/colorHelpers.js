@@ -46,4 +46,15 @@ function getScale(hexColor, numberOfColors) {
     .colors(numberOfColors);
 }
 
-export { generatePalette };
+function getSingleColorPalette(palette, color) {
+  let singleColorPalette = []
+  let values = Object.values(palette.colors);
+  for(const shade of values) {
+    singleColorPalette.push(shade.find((col) => col.id === color));
+  }
+  return singleColorPalette;
+}
+
+export { generatePalette, getSingleColorPalette };
+
+
