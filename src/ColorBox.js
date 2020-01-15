@@ -17,7 +17,7 @@ class ColorBox extends Component {
         });
     }
     render() {
-    const {background, name} = this.props;
+    const {background, name, hidden} = this.props;
         return (
             <div style={{background: background}} className="ColorBox">
                 <div className="clearfix">.</div>
@@ -34,9 +34,10 @@ class ColorBox extends Component {
                             <button className='copy-button'>Copy</button>
                         </CopyToClipboard>
                     </div>
+                    {!hidden &&
                     <Link to={`/palette/${this.props.paletteId}/${this.props.colorId}`} onClick={(e)=>{e.stopPropagation()}}>
                         <span className='see-more'>More</span>
-                    </Link>
+                    </Link>}
             </div>
         )
     }

@@ -96,6 +96,7 @@
     text-align: center;
     z-index:-1;
     flex-direction: column;
+    visibility: hidden;
 }
 
 .copy-msg.shown {
@@ -104,6 +105,7 @@
     transition: all 0.4s;
     transition-delay: 0.2s;
     font-size: 4rem;
+    visibility: visible;
 }
 
 .copy-msg.shown h1 {
