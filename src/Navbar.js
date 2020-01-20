@@ -31,15 +31,17 @@ class Navbar extends Component {
                 <div className="navbar-name">
                     <h4><Link to= '/'>REACTCOLORPICKER</Link></h4>
                 </div>
-                <div className='slider'>
-                    <Slider
-                        defaultValue={this.props.level}
-                        min={100}
-                        max={900}
-                        step={100}
-                        onAfterChange={this.props.changeLevel}
-                    />
-                </div>
+                {this.props.showSlider &&
+                    <div className='slider'>
+                        <Slider
+                            defaultValue={this.props.level}
+                            min={100}
+                            max={900}
+                            step={100}
+                            onAfterChange={this.props.changeLevel}
+                        />
+                    </div>
+                }
                 <div className='select-container'>
                     <Select 
                     value ={this.state.format} 

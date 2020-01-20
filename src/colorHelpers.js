@@ -52,7 +52,7 @@ function getSingleColorPalette(palette, color) {
   for(const shade of values) {
     singleColorPalette.push(shade.find((col) => col.id === color));
   }
-  return singleColorPalette;
+  return {palette: singleColorPalette.slice(1), paletteName: palette.paletteName, emoji: palette.emoji};
 }
 
 export { generatePalette, getSingleColorPalette };
