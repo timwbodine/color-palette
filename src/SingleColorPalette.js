@@ -24,7 +24,7 @@ class SingleColorPalette extends Component {
         const {paletteName} = this.props.palette;
         const {format} = this.state;
         const colorBoxes = palette.map(color => (
-            <ColorBox hidden={true} background={color[format]} name={color.name} paletteId={color.paletteId} colorId={color.id} key={color.id} />
+            <ColorBox hidden={true} background={color[format]} name={color.name} paletteId={color.paletteId} colorId={color.id} key={color.name} />
         ));
         return (
             <div className="Palette SingleColorPalette">

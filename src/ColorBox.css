@@ -25,9 +25,13 @@
     background: rgba(255, 255, 255, 0.3);
     font-size: 1rem;
     line-height: 15%;
-    color: white;
+    color: black;
     text-transform: uppercase;
     border: none;
+}
+
+.copy-button.dark-color, .back-button.dark-color {
+    color: white;
 }
 
 .copy-button {
@@ -54,6 +58,10 @@
     font-size: 12px;
 }
 
+.box-content.dark-color {
+    color: #fff;
+}
+
 .see-more {
     position: absolute;
     width: 20%;
@@ -62,8 +70,11 @@
     background: rgba(255, 255, 255, 0.3);
     font-size: 12px;
     text-transform: uppercase;
-    color: white;
+    color: black;
+}
 
+.see-more.dark-color {
+    color: white;
 }
 .clearfix {
     opacity: 0;
@@ -123,3 +134,4 @@
 .copy-msg.shown p {
     font-size: 2rem;
 }
+
