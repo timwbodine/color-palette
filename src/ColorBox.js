@@ -23,7 +23,7 @@ class ColorBox extends Component {
             <div style={{background: background}} className="ColorBox">
                 <div className="clearfix">.</div>
                 <div style={{background: background}} className={`grow-box ${this.state.copied ? 'growing' : ''}`}></div> 
-                <div className={`copy-msg ${this.state.copied ? 'shown' : ''}`}>
+                <div className={`copy-msg ${this.state.copied ? 'shown' : ''} ${isDarkColor ? 'dark-color': ''}`}>
                     <h1>Copied</h1>
                     <p>{this.props.background}</p>
                 </div>
